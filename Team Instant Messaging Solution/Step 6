@@ -1,0 +1,10 @@
+Step 6
+Step Name: Creation of NAT Gateway
+Instructions	
+1) Navigate to VPC using the Services button at the top of the screen
+2) Select NAT Gateway at the left side of the screen
+3) Click on Create NAT Gateway
+- Deploy it in the public subnet
+- Connectivity type : Public
+- Allocate an elastic IP by clicking on “Allocate Elastic IP”
+4) Click on “Create NAT Gateway” to create the gateway
