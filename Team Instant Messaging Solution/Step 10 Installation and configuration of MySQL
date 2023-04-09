@@ -1,0 +1,30 @@
+Step 10   Installation and configuration of MySQL
+
+Step name:	Installation and configuration of MySQL			
+Instructions	1) Copy the database pem file into the application server using the below command
+scp -i <application server pem file> <database server pem file > ec2-user@<application server public IP>:/home/ec2-user
+2) Log into the application server using SSH/Putty
+3) From the application server, log into the database server using the pem file copied in step 1and the private IP address of the database server with the following command
+ssh -i <database server pem file> ec2-user@<private IP of database server>
+4) Enter the following commands to install and configure MySQL on the database server
+sudo yum update
+wget http://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm
+sudo yum localinstall mysql57-community-release-el7-9.noarch.rpm -y
+sudo yum install mysql-community-server -y --nogpgcheck
+sudo systemctl start mysqld.service
+
+Run the below command to retrieve a temporary password for MySQL
+sudo grep 'temporary password' /var/log/mysqld.log | rev | cut -d" " -f1 | rev | tr -d "."
+
+Log in to MySQL with the below command and enter the above password when prompted
+mysql -u root -p
+
+Enter the below command after you login to MySQL 
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'Password42!';
+
+Type ‘exit’ into the MySQL prompt and press Enter to exit out of the MySQL environment.
+Enter the below commands to complete the setup. Ignore any warning messages you receive.
+wget https://d6opu47qoi4ee.cloudfront.net/install_mysql_linux.sh
+chmod 777 install_mysql_linux.sh
+sudo ./install_mysql_linux.sh
+5) Type exit to exit the database server and go back to the application server
