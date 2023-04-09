@@ -1,0 +1,12 @@
+Step 9
+Step name: Creation of Database server
+
+Instructions	
+1) Navigate to EC2 using the Services button at the top of the screen
+2) Select Instances at the left side of the screen
+3) Click on Launch Instance
+- Select the AMI Amazon 2 Linux
+- Select the instance type t2.micro
+- Select Network as "Project 1 VPC" and subnet as "Private Subnet"
+- For the security group, open the ports 80, 443,22 and 3306 for source set to "Anywhere"
+4) Launch the instance by selecting the same pem file created in the previous step
