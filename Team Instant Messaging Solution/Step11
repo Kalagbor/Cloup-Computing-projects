@@ -1,0 +1,19 @@
+Step 11
+Step name	Installation and configuration of Mattermost			
+Instructions	1) Enter the following commands after logging into the application server via SSH to install and configure Mattermost
+
+wget https://d6opu47qoi4ee.cloudfront.net/install_mattermost_linux.sh
+
+sudo yum install dos2unix -y
+sudo dos2unix install_mattermost_linux.sh
+
+chmod 700 install_mattermost_linux.sh
+sudo ./install_mattermost_linux.sh <private IP of MySQL server>
+Example : sudo ./install_mattermost_linux 173.65.34.7
+sudo chown -R mattermost:mattermost /opt/mattermost
+sudo chmod -R g+w /opt/mattermost
+cd /opt/mattermost
+sudo -u mattermost ./bin/mattermost
+
+2) Check whether the server has been successfully deployed by navigating to the following URL in your web browser. The web page might take a couple of minutes to load. 
+<public IP of the application server>:8065
