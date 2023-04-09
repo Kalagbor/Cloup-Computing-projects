@@ -1,0 +1,14 @@
+Step 2
+Step name: Creating Public Subnet
+
+Instructions	
+1) Navigate to VPC->Subnets
+2) Click on "Create Subnet"
+3) Enter the following fields
+Name tag : Public Subnet
+VPC : Select the Project 1 VPC
+IPv4 CIDR block : 10.0.1.0/24
+The other options can be ignored
+4) Click on Create
+5) Once the subnet has been created, select the subnet and click on Actions->Modify Auto-assign IP settings
+6) Enable the option "Auto assign IPv4" and select Save
