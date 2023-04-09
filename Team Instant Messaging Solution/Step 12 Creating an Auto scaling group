@@ -1,0 +1,8 @@
+Step 12
+Step name: Create an Auto scaling group
+Instructions:
+1) Select the LT/LC or AMI that should be used to create your ASG
+2) Select the TG to add your EC2 Instance of the app server
+3) Select your scaling policy to determine how/when your ASG will scale your EC2 Instance
+4) You can add an SNS Topic for your configuration to notify you of activities in your ASG
+5) Create your Auto scaling group.
