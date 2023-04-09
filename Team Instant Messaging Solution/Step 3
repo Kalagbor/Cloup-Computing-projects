@@ -1,0 +1,12 @@
+Step 3
+Step Name: Creating Private Subnet
+
+Instructions	
+1) Navigate to VPC->Subnets
+2) Click on "Create Subnet"
+3) Enter the following fields
+Name tag : Private Subnet
+VPC : Select the Project 1 VPC
+IPv4 CIDR block : 10.0.2.0/24
+The other options can be ignored
+4) Click on Create
