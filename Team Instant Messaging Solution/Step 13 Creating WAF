@@ -1,0 +1,9 @@
+Step 13
+Step name: Creation and Configuration of WAF
+#WAF is a web application firewall that lets you monitor web requests(HTTP and HTTPS) that are forwarded to to your Application Load Balancer. 
+Instructions:
+1) Using the ALB configure your WAF
+2) Define the conditions using either cross-site scripting, SQL code injection, Geolocation, IP address conditions etc
+3) Define the rules
+4) Determine which set of rules and coditions that are allowed, blocked or should be counted
+5) Create your WAF
