@@ -1,0 +1,12 @@
+Step 5 Creation of Public Route Table
+Step Name: Creation of Public Route Table
+Instructions	
+1) Navigate to VPC -> Route Tables and click on Create Route table
+2) Enter the name tag "Public Route Table", select the Project 1 VPC from the dropdown and click on Create
+3) Once the route table is created, select it and select the Routes tab below the list of route tables
+4) Click in Edit Routes and add the following route (Don't edit the existing one)
+- Destination : 0.0.0.0/0
+- Target : Select Internet Gateway and the select the Project 1 Internet Gateway
+Click on Save Routes
+5) Select the Subnet Associations tab and click on Edit Subnet Associations
+6) Select the Public Subnet from the list and click on Save
