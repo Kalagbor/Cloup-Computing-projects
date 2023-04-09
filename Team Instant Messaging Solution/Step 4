@@ -1,0 +1,7 @@
+Step 4
+Step Name: Creating and Configuration of an Internet Gateway
+Instructions	1) Navigate to VPCs->Internet Gateway
+2) Click on "Create Internet Gateway"
+3) Enter the name tag "Project 1 Internet Gateway" and click on "Create Internet Gateway"
+4) After the gateway is created, select it and click on Actions->Attach to VPC
+5) Select the Project 1 VPC and click on "Attach Internet Gateway"
