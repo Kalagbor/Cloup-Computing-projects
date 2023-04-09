@@ -1,0 +1,20 @@
+#Team communication and instant messaging solutions are an integral part of any business environment today. As of 2020, the total number of users of Slack and Microsoft 
+#Teams exceeded 20 million. 
+#Some organizations might have compliance policies in place which do not allow them to use services managed by third parties. They will prefer solutions that can be 
+#managed and hosted on servers controlled by them. The same will extend to communication solutions as well. This project is intented to great a customized Team Instant 
+#messaging solution that is managed by an organization in their own private network.
+
+Step 1
+Step name:	Creation of VPC
+
+Instructions	
+1) Navigate to VPC using the Services button at the top of the screen
+2) Select "Your VPCs" on the left side of the screen
+3) Click on "Create VPC"
+4) Enter the following fields :
+Name: Project 1 VPC
+IPv4 CIDR Block : 10.0.0.0/16
+The rest of the options can be ignored
+5) Select "Create VPC"
+6) Select the VPC and click on Actions->Edit DNS hostnames
+7) Enable DNS hostnames and click on Save
