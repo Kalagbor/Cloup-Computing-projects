@@ -11,4 +11,4 @@ Instructions
 - For the security group, open the ports 80,443, 22 and 8065 for source set to "Anywhere"
 4) Launch the instance after creating a new pem file and downloading it
 5) Create an AMI from the instance after the configuration of the instance
-6) Using the AMI launch the second and third instance
+6) Using the AMI launch the second and third instance in the Public Subnet
