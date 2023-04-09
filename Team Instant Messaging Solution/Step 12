@@ -1,0 +1,6 @@
+Step 12
+Step name: Creating an Application Load Balancer
+Instructions:
+1) Create a Target Group and configure health check for the launched instances
+2) Add the launched instances to the Target Group
+3) Create the TG
